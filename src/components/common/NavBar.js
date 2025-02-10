@@ -2,10 +2,12 @@ import { FaSearch, FaBell, FaShoppingCart } from "react-icons/fa";
 import { CiMail } from "react-icons/ci";
 import { HiUserCircle } from "react-icons/hi";
 
-const NavBar = () => {
+const NavBar = ({isSidebarHovered}) => {
     return (
-        <div className=" z-[2000] flex items-center  justify-center w-[100vw] h-[83px]
-         border-b-2 bg-gray-50 overflow-x-hidden px-10" >
+        <div className={` z-[200] flex items-center  justify-center  h-[83px]
+         border-b-2 bg-gray-50 overflow-x-hidden px-10 
+         transition duration-500 ${isSidebarHovered ? "w-[90vw]  " : "w-[100vw] " }   ` }>
+
             <div className="w-10/12 h-full flex ml-[-250px] justify-between items-center ">
                 {/* Left Part */}
                 <div className="flex items-center bg-gray-600 rounded-full h-[35px] px-3 relative w-[300px]">

@@ -5,14 +5,15 @@ import SideBarLinks from "../components/core/sidebar/SideBarLinks";
 
 const SideBar = ({onHoverChange }) => {
     return (
+
         <div
-            className="z-[3000] text-black bg-white border-r-2
-                border-black hover:w-[250px] w-[100px] h-full
-             transition-all duration-500 group sticky "
+            className="z-[300] text-black bg-white border-r-2
+                border-black hover:w-[250px] w-[100px] h-[2632px]
+             transition-all duration-500 group  "
             onMouseEnter={() => onHoverChange(true)}
             onMouseLeave={() => onHoverChange(false)}
         >
-            <div className="flex items-center justify-center mt-2 border-b-2 pb-2 h-[78.01px] ">
+            <div className="flex items-center justify-center mt-2 border-b-2 pb-2 h-[75.01px] ">
                 <img
                     src={Logo}
                     alt="Mini Logo"
@@ -24,7 +25,7 @@ const SideBar = ({onHoverChange }) => {
                     className="hidden group-hover:block w-24 h-auto"
                 />
             </div>
-            <div className="flex flex-col w-full h-full px-3">
+            <div className="flex flex-col w-full h-[100vh] px-3 z-[300]">
                 <SideBarLinks />
             </div>
         </div>

@@ -4,7 +4,7 @@ import {IoIosArrowForward} from "react-icons/io";
 
 const SideBarLinks = () => {
     return (
-        <div className={`flex flex-col w-full h-full gap-[50px]  text-black  scrollbar-hide`}>
+        <div className={`flex z-[3000] flex-col w-full h-full gap-[50px]  text-black  scrollbar-hide`}>
 
             <div className={`flex flex-col items-start justify-center gap-0 transition-all duration-500     `}>
 

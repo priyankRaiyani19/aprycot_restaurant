@@ -5,6 +5,7 @@ import NavBar from "./components/common/NavBar";
 import SideBar from "./pages/SideBar";
 import { useState } from "react";
 import Error404 from "./pages/Error404";
+import Footer from "./components/common/Footer";
 // import Error500 from "./pages/Error500";
 
 function App() {
@@ -16,12 +17,14 @@ function App() {
             <div
                 className={`transition-all duration-500  flex-grow`}
             >
-                <NavBar />
+                <NavBar isSidebarHovered={isSidebarHovered} />
+
                 <Routes>
                     <Route path="/" element={<DashBoard isSidebarHovered={isSidebarHovered} />} />
                     {/* Uncomment if you have an Error404 page */}
                      <Route path="*" element={<Error404/>} />
                 </Routes>
+                <Footer isSidebarHovered={isSidebarHovered}  />
             </div>
         </div>
     );
