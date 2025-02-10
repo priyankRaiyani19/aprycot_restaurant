@@ -1,13 +1,30 @@
 import "./App.css";
+import { Route, Routes } from "react-router";
+import DashBoard from "./pages/DashBoard";
+import NavBar from "./components/common/NavBar";
+import SideBar from "./pages/SideBar";
+import { useState } from "react";
+import Error404 from "./pages/Error404";
+// import Error500 from "./pages/Error500";
 
 function App() {
-  return (
-    <main class="flex justify-center gap-4 flex-col min-h-screen">
-      <h1 class="text-3xl text-center font-bold underline">React & Tailwind CSS Starter Pack</h1>
-      <p class="text-center text-xl">This is a starter pack for React & Tailwind CSS projects.</p>
-      <img src="https://bit.ly/3wsmzTy" alt="meme" class="mx-auto" />
-    </main>
-  );
+    const [isSidebarHovered, setIsSidebarHovered] = useState(false);
+
+    return (
+        <div className="flex w-[100vw] h-[100vh] overflow-x-hidden  text-black relative">
+            <SideBar onHoverChange={(hovered) => setIsSidebarHovered(hovered)} />
+            <div
+                className={`transition-all duration-500  flex-grow`}
+            >
+                <NavBar />
+                <Routes>
+                    <Route path="/" element={<DashBoard isSidebarHovered={isSidebarHovered} />} />
+                    {/* Uncomment if you have an Error404 page */}
+                     <Route path="*" element={<Error404/>} />
+                </Routes>
+            </div>
+        </div>
+    );
 }
 
 export default App;
