@@ -7,8 +7,8 @@ const SideBar = ({onHoverChange }) => {
     return (
 
         <div
-            className="z-[300] text-black bg-white border-r-2
-                border-black hover:w-[250px] w-[100px] h-[2632px]
+            className="sticky top-0 text-black bg-white border-r-2
+                border-black hover:w-[257px] w-[120px] hover:h-[1000px] h-[875px]
              transition-all duration-500 group  "
             onMouseEnter={() => onHoverChange(true)}
             onMouseLeave={() => onHoverChange(false)}

@@ -10,7 +10,7 @@ const NavBar = ({isSidebarHovered}) => {
 
             <div className="w-10/12 h-full flex ml-[-250px] justify-between items-center ">
                 {/* Left Part */}
-                <div className="flex items-center bg-gray-600 rounded-full h-[35px] px-3 relative w-[300px]">
+                <div className="flex items-center border-2 border-[#E3E1E1] rounded-full h-[35px] px-3 relative w-[300px]">
                     <FaSearch className="text-gray-400 w-4 h-4" />
                     <input
                             type="text"

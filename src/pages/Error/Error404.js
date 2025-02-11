@@ -1,6 +1,6 @@
 import React from 'react'
-import Burger from "../assets/Error/error.png"
-import OrngButton from "../components/common/OrngButton";
+import Burger from "../../assets/Error/error.png"
+import OrngButton from "../../components/common/OrngButton";
 import {Link} from "react-router";
 
 

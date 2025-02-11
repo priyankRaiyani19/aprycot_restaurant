@@ -7,7 +7,7 @@ import Burger from "../assets/dashBoard/categorymenu/Burger.png"
 import Coke from "../assets/dashBoard/categorymenu/Coke.png"
 
 
-export const sideBarLinks = [
+export const categoryMenuLinks = [
     {
         id: 1, img: Pizza, name: "Pizza",
     }, {

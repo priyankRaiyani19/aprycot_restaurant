@@ -1,6 +1,6 @@
 import React from 'react'
-import Cookie from '../assets/Error/cookie.png'
-import OrngButton from "../components/common/OrngButton";
+import Cookie from '../../assets/Error/cookie.png'
+import OrngButton from "../../components/common/OrngButton";
 import {Link} from "react-router";
 // import Five from '/src/assets/Error500/five.png'
 

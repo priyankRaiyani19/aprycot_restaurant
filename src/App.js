@@ -4,7 +4,7 @@ import DashBoard from "./pages/DashBoard";
 import NavBar from "./components/common/NavBar";
 import SideBar from "./pages/SideBar";
 import { useState } from "react";
-import Error404 from "./pages/Error404";
+import Error404 from "./pages/Error/Error404";
 import Footer from "./components/common/Footer";
 // import Error500 from "./pages/Error500";
 
