@@ -29,15 +29,15 @@ const OfferSection = ({isSidebarHovered}) => {
             </div>
             {/* Right Section */}
             <div className={`flex flex-col rounded-md items-center   ${isSidebarHovered ? " mr-[100px] w-[]" : "mr-[20px]"}`}>
-                <div className="w-full h-[275px] mt-[50px] bg-gray-100 rounded-t-[24px]">
+                <div className="w-full h-[275px] mt-[45px] bg-white rounded-t-[24px]">
                     <img
                         src={burger}
                         alt=""
-                        className="mt-[-100px] w-[399px] h-[295px]"
+                        className="mt-[-90px] w-[369px] h-[275px]"
                     />
                 </div>
                 <div className="flex flex-col items-center justify-center gap-2
-                 w-full h-full bg-gray-100 rounded-b-[24px]">
+                 w-full h-full bg-white rounded-b-[24px]">
                     <p className="text-3xl font-bold">50% off</p>
                     <p className="text-lg text-gray-500">the full price of burger</p>
                 </div>

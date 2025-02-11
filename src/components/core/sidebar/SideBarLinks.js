@@ -20,7 +20,10 @@ const SideBarLinks = () => {
                                 <div
                                     key={index}
                                     className={`flex items-center justify-evenly w-full hover:bg-orange-200 gap-5 
-                                    rounded-full p-3`}>
+                                    rounded-full p-3 
+                                
+                                    `}>
+                                    
                                     {ele.icon}
                                     <p className={`text-[15px] font-semibold  hidden group-hover:block text-gray-500`}>
                                         {ele.name}

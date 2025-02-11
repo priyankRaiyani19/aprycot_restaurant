@@ -1,7 +1,7 @@
-import Spaghetti from "../assets/dashBoard/maincategory/Spaghetti.png"
-import VegetablePizza from "../assets/dashBoard/maincategory/Vegetable Pizza.png"
-import MushroomPizza from "../assets/dashBoard/maincategory/Mushroom Pizza.png"
-import Sweets from "../assets/dashBoard/maincategory/Sweets.png"
+import Spaghetti from "../../assets/dashBoard/maincategory/Spaghetti.png"
+import VegetablePizza from "../../assets/dashBoard/maincategory/Vegetable Pizza.png"
+import MushroomPizza from "../../assets/dashBoard/maincategory/Mushroom Pizza.png"
+import Sweets from "../../assets/dashBoard/maincategory/Sweets.png"
 
 export const mainCategory = [
 

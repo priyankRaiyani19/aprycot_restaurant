@@ -2,3 +2,67 @@
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
 }
+@keyframes roll {
+    0% {
+        transform: translateX(300px) rotate(0deg);
+    }
+    50% {
+        transform: translateX(-50px) rotate(-720deg);
+    }
+    100% {
+        transform: translateX(300px) rotate(0deg);
+    }
+}
+
+@keyframes rollreverse {
+    0% {
+        transform: translateX(-80px) rotate(-720deg);
+
+    }
+    50% {
+        transform: translateX(60px) rotate(0deg);
+    }
+    100% {
+        transform: translateX(-80px) rotate(-720deg);
+    }
+
+}
+
+
+/*@keyframes bounce-left {*/
+/*    0% {*/
+/*        opacity: 0;*/
+/*        transform: translateX(-50px) translateY(-50px);*/
+/*    }*/
+/*    100% {*/
+/*        opacity: 1;*/
+/*        transform: translateX(0) translateY(0);*/
+/*    }*/
+/*}*/
+
+/*@keyframes bounce-right {*/
+/*    0% {*/
+/*        opacity: 0;*/
+/*        transform: translateX(50px) translateY(-50px);*/
+/*    }*/
+/*    100% {*/
+/*        opacity: 1;*/
+/*        transform: translateX(0) translateY(0);*/
+/*    }*/
+/*}*/
+
+.animate-roll {
+    animation: roll 8s ease-in-out infinite;
+}
+.animate-rollreverse {
+    animation: rollreverse 8s ease-in-out backwards infinite;
+}
+
+
+/*.animate-bounce-left {*/
+/*    animation: bounce-left 0.8s ease-in-out forwards;*/
+/*}*/
+
+/*.animate-bounce-right {*/
+/*    animation: bounce-right 0.8s ease-in-out forwards;*/
+/*}*/

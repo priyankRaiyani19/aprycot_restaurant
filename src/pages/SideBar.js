@@ -3,7 +3,7 @@ import Logo from "../assets/sidebar/mini_Logo.png";
 import FullLogo from "../assets/sidebar/full_logo.png";
 import SideBarLinks from "../components/core/sidebar/SideBarLinks";
 
-const SideBar = ({onHoverChange }) => {
+const SideBar = ({onHoverChange}) => {
     return (
 
         <div
@@ -26,7 +26,7 @@ const SideBar = ({onHoverChange }) => {
                 />
             </div>
             <div className="flex flex-col w-full h-[100vh] px-3 z-[300]">
-                <SideBarLinks />
+                <SideBarLinks/>
             </div>
         </div>
     );

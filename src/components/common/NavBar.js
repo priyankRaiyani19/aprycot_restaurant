@@ -4,11 +4,11 @@ import { HiUserCircle } from "react-icons/hi";
 
 const NavBar = ({isSidebarHovered}) => {
     return (
-        <div className={` z-[200] flex items-center  justify-center  h-[83px]
+        <div className={`  fixed  z-[500] flex items-center  justify-center  h-[83px]
          border-b-2 bg-gray-50 overflow-x-hidden px-10 
-         transition duration-500 ${isSidebarHovered ? "w-[90vw]  " : "w-[100vw] " }   ` }>
+         transition duration-500 ${isSidebarHovered ? "w-[90vw]  " : "w-[100vw] " }  ` }>
 
-            <div className="w-10/12 h-full flex ml-[-250px] justify-between items-center ">
+            <div className="w-10/12 h-full flex ml-[-250px] justify-between items-center  ">
                 {/* Left Part */}
                 <div className="flex items-center border-2 border-[#E3E1E1] rounded-full h-[35px] px-3 relative w-[300px]">
                     <FaSearch className="text-gray-400 w-4 h-4" />

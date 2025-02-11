@@ -1,5 +1,5 @@
 import React from 'react';
-import {categoryMenuLinks} from "../../../data/categoryMenulinks";
+import {categoryMenuLinks} from "../../../data/dashboard/categoryMenulinks";
 import {IoIosArrowForward} from "react-icons/io";
 
 const TypesOfCategoryMenu = ({isSidebarHovered}) => {
