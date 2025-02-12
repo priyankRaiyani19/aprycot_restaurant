@@ -15,6 +15,7 @@ export const sideBarLinks = [
                 id:1,
                 icon: <ImWindows className={`w-[40px] h-[40px] text-black`}/>,
                 name: "Dashboard",
+                path: "/",
             },
         ]
     },
@@ -24,23 +25,27 @@ export const sideBarLinks = [
             {
                 id:2,
                 icon: <FaRadio className={`w-[40px] h-[40px] text-black`}/>,
-                name: "SpacialPage"
+                name: "SpacialPage",
+                path: "/",
             },
             {
                 id:3,
                 icon: <MdOutlineSecurity className={`w-[40px] h-[40px] text-black`}/>,
-                name: "Authentication"
+                name: "Authentication",
+                path: "/",
             },
             {
                 id:4,
                 icon: <HiMiniUserGroup className={`w-[40px] h-[40px] text-black`}/>,
-                name: "Users"
+                name: "Users",
+                path: "/user",
             },
 
             {
                 id:5,
                 icon: <RiBookmark2Fill className={`w-[40px] h-[40px] text-black`}/>,
-                name: "Utilities"
+                name: "Utilities",
+                path: "/",
             }
         ]
     },
@@ -50,12 +55,14 @@ export const sideBarLinks = [
             {
                 id:6,
                 icon: <FaWallet className={`w-[40px] h-[40px] text-black`}/>,
-                name: "components"
+                name: "components",
+                path: "/",
             },
             {
                 id:7,
                 icon: <BiCalendarStar className={`w-[40px] h-[40px] text-black`}/>,
-                name: "SpacialPage"
+                name: "SpacialPage",
+                path: "/",
             }
         ]
     }

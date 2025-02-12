@@ -19,7 +19,7 @@ const ProfileBanner = ({isSidebarHovered}) => {
 
                 <div className={`z-[5] absolute  h-[90px]
                     mt-[-89px] rounded-b-[24px] p-5
-                    bg-opacity-100 backdrop-blur-[5px] bg-white flex  justify-between 
+                    bg-opacity-50 backdrop-blur-[5px] bg-white flex  justify-between 
                       ${isSidebarHovered ? "w-[81vw]" : "w-[89vw]"}
                      
                      `}>

@@ -74,9 +74,8 @@ const TrendingOrder = ({isSidebarHovered}) => {
                                 <div className={`absolute mt-[25px] items-center ml-[150px] w-[198px] h-[148px]`}
                                      key={ele.id}>
                                     <img src={ele.img} alt="" className={`
-                                    ${ele.id > '3' ? "w-[298px] h-[198px] ml-[-5vh]" : "w-[148px] h-[148px]"}
-                                     ${ele.id > '3' && isSidebarHovered ? "ml-[-10vh]  " : " ml-[0px] "}
-                                     ${ele.id <= '3' && isSidebarHovered ? "ml-[-5vh]  " : " ml-[0px] "}
+                                    ${ele.id > '3' ? "w-[298px] h-[198px] -ml-[9vh] " : "w-[148px] h-[148px]"}
+                                     ${ele.id > '3' && isSidebarHovered ? "ml-[-10vh]  " : " -ml-[5vh] "}
                                    `}/>
                                 </div>
                             </div>))}

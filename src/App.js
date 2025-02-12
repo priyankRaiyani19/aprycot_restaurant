@@ -24,9 +24,9 @@ function App() {
                 <NavBar isSidebarHovered={isSidebarHovered} />
 
                 <Routes>
-                    {/*<Route path="/" element={<DashBoard isSidebarHovered={isSidebarHovered} />} />*/}
+                    <Route path="/" element={<DashBoard isSidebarHovered={isSidebarHovered} />} />
 
-                    <Route path="/" element={<UserProfile isSidebarHovered={isSidebarHovered} />} />
+                    <Route path="/user" element={<UserProfile isSidebarHovered={isSidebarHovered} />} />
 
                     {/* Uncomment if you have an Error404 page */}
                      <Route path="*" element={<Error500 isSidebarHovered={isSidebarHovered} /> }/>

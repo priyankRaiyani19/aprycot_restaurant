@@ -10,10 +10,10 @@ function DashBoard({isSidebarHovered}) {
 
 
 
-    // FFF6D8
-    return (<div className={`   flex flex-col  mt-[80px]
+return(  // FFF6D8
+    <div className={` z-50  flex flex-col   mt-[80px] 
         text-3xl  text-black mx-auto my-auto bg-[#FFF6D8]  transition-all duration-500
-         ${isSidebarHovered ? "w-[90vw] ml-[-50px] " : "w-[100vw]  "} `}>
+         ${isSidebarHovered ? "w-[90vw] ml-[-50px]   " : "w-[100vw]"} `}>
 
 
         <div className={`fixed  flex flex-col mt-[250px] gap-[-500px] ${isSidebarHovered ?"w-[1380px] ml-[50px]" :"w-full "}`}>

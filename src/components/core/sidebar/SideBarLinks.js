@@ -1,6 +1,7 @@
 import React from 'react';
 import {sideBarLinks} from "../../../data/sideBar-links";
 import {IoIosArrowForward} from "react-icons/io";
+import {Link} from "react-router";
 
 const SideBarLinks = () => {
     return (
@@ -17,6 +18,7 @@ const SideBarLinks = () => {
                                 {ele.title}
                             </p>
                             {ele.links.map((ele,index) => (
+                                <Link to={`${ele.path}`} key={index} className={` w-full`}>
                                 <div
                                     key={index}
                                     className={`flex items-center justify-evenly w-full hover:bg-orange-200 gap-5 
@@ -35,6 +37,7 @@ const SideBarLinks = () => {
                                             </div>)
                                     }
                                 </div>
+                                </Link>
                             ))
                             }
                         </div>

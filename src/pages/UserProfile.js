@@ -8,6 +8,7 @@ import OnlineOrder from "../components/core/UserProfile/onlineOrder";
 import {TypeOfOrder} from "../data/userProfile/typesOfOrder";
 import Suggetions from "../components/core/UserProfile/suggetions";
 import SpacialMenu from "../components/core/UserProfile/spacialMenu";
+import Review from "../components/core/UserProfile/review";
 
 const UserProfile = ({isSidebarHovered}) => {
 
@@ -37,7 +38,6 @@ const UserProfile = ({isSidebarHovered}) => {
             
             `}>
 
-
                 {/*grid 1 */}
 
                 <div className={`col-span-3  flex flex-col gap-[40px]`}>
@@ -49,8 +49,9 @@ const UserProfile = ({isSidebarHovered}) => {
 
                 {/*grid 2 */}
 
-                <div className={`col-span-6 bg-white h-full  `}>
-                    4
+                <div className={`col-span-6  h-full  flex flex-col gap-[40px]  `}>
+                   <Review isActive={true}  />
+                   <Review isActive={false}  />
                 </div>
 
                 {/*grid 3 */}
@@ -113,9 +114,7 @@ const UserProfile = ({isSidebarHovered}) => {
 
                 </div>
 
-
             </div>
-
 
         </div>
     );

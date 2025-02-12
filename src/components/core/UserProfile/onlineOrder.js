@@ -18,8 +18,9 @@ const OnlineOrder = ({data, isActive}) => {
                         <div
                             key={ele.id}
                             className={`  h-[65px]   `}>
+                            {/*bg-[#FBE1D0]*/}
 
-                            <hr className={`mb-5 mt-[10px] `}/>
+                            <div className={`h-[1px] mb-5 mt-[10px] ${ele.id=== 1 ? "bg-gray-200":"bg-[#FBE1D0]"} `}></div>
 
                             <div className={`flex justify-between`}>
 
