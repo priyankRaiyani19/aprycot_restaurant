@@ -9,12 +9,13 @@ import {TypeOfOrder} from "../data/userProfile/typesOfOrder";
 import Suggetions from "../components/core/UserProfile/suggetions";
 import SpacialMenu from "../components/core/UserProfile/spacialMenu";
 import Review from "../components/core/UserProfile/review";
+import useToggleSidebar from "../hooks/useToggleSidebar";
 
-const UserProfile = ({isSidebarHovered}) => {
-
+const UserProfile = () => {
+    const {isSidebarHovered} = useToggleSidebar;
 
     return (
-        <div className={` z-50  flex flex-col   mt-[80px] 
+        <div className={` z-50  flex flex-col  
         text-3xl  text-black mx-auto my-auto bg-[#FFF6D8]  transition-all duration-500
          ${isSidebarHovered ? "w-[90vw] ml-[-50px]   " : "w-[100vw]"} `}>
             <div

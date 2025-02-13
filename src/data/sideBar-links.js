@@ -1,10 +1,14 @@
-import {FaRadio, FaWallet} from "react-icons/fa6";
-import {MdOutlineSecurity} from "react-icons/md";
-import {HiMiniUserGroup} from "react-icons/hi2";
-import {RiBookmark2Fill} from "react-icons/ri";
 import React from "react";
-import {BiCalendarStar} from "react-icons/bi";
-import {ImWindows} from "react-icons/im";
+import component from "../assets/sidebar/component";
+import spacialpage from "../assets/sidebar/spacialpage";
+import Shield from "../assets/sidebar/shild";
+import User from "../assets/sidebar/user";
+import Utilities from "../assets/sidebar/utilities";
+import Component from "../assets/sidebar/component";
+import Widgets from "../assets/sidebar/widgets";
+import Dashboard from "../assets/sidebar/dashboard";
+import Spacialpage from "../assets/sidebar/spacialpage";
+
 
 export const sideBarLinks = [
 
@@ -12,10 +16,10 @@ export const sideBarLinks = [
         title: "Home",
         links: [
             {
-                id:1,
-                icon: <ImWindows className={`w-[40px] h-[40px] text-black`}/>,
+                id: 1,
+                icon: <Dashboard />,
                 name: "Dashboard",
-                path: "/",
+                path: "/dashboard",
             },
         ]
     },
@@ -23,27 +27,27 @@ export const sideBarLinks = [
         title: "Page",
         links: [
             {
-                id:2,
-                icon: <FaRadio className={`w-[40px] h-[40px] text-black`}/>,
+                id: 2,
+                icon: <Spacialpage/>,
                 name: "SpacialPage",
                 path: "/",
             },
             {
-                id:3,
-                icon: <MdOutlineSecurity className={`w-[40px] h-[40px] text-black`}/>,
+                id: 3,
+                icon: <Shield/>,
                 name: "Authentication",
                 path: "/",
             },
             {
-                id:4,
-                icon: <HiMiniUserGroup className={`w-[40px] h-[40px] text-black`}/>,
+                id: 4,
+                icon: <User fill={"black"} />,
                 name: "Users",
                 path: "/user",
             },
 
             {
-                id:5,
-                icon: <RiBookmark2Fill className={`w-[40px] h-[40px] text-black`}/>,
+                id: 5,
+                icon: <Utilities/>,
                 name: "Utilities",
                 path: "/",
             }
@@ -53,15 +57,15 @@ export const sideBarLinks = [
         title: "Element",
         links: [
             {
-                id:6,
-                icon: <FaWallet className={`w-[40px] h-[40px] text-black`}/>,
+                id: 6,
+                icon: <Component/>,
                 name: "components",
                 path: "/",
             },
             {
-                id:7,
-                icon: <BiCalendarStar className={`w-[40px] h-[40px] text-black`}/>,
-                name: "SpacialPage",
+                id: 7,
+                icon: <Widgets/>,
+                name: "widgets",
                 path: "/",
             }
         ]

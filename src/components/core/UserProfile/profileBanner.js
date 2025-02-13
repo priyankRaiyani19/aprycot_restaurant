@@ -3,8 +3,11 @@ import profileBg from "../../../assets/userProfile/profile_bg.png";
 import {HiUserCircle} from "react-icons/hi";
 import {IoLocationOutline} from "react-icons/io5";
 import {bannerData} from "../../../data/userProfile/bannerData";
+import useToggleSidebar from "../../../hooks/useToggleSidebar";
 
-const ProfileBanner = ({isSidebarHovered}) => {
+const ProfileBanner = () => {
+    const { isSidebarHovered } = useToggleSidebar()
+
     return (
         <div className={`  z-50 p-5   
             ${isSidebarHovered ? "w-[83.5vw] ml-[50px]" : "w-full"}
