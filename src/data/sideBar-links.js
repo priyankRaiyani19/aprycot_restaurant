@@ -24,7 +24,7 @@ export const sideBarLinks = [
         links: [
             {
                 id: 1,
-                icon: <Dashboard />,
+                icon: <Dashboard fill={"#959895"}   />,
                 icon2:dashboard,
                 name: "Dashboard",
                 path: "/dashboard",
@@ -36,34 +36,34 @@ export const sideBarLinks = [
         links: [
             {
                 id: 2,
-                icon: <Spacialpage />,
+                icon: <Spacialpage fill={"#959895"} />,
                 icon2:spacialpage,
                 name: "SpacialPage",
                 path: "/success",
             },
             {
                 id: 3,
-                icon: <Shield />,
+                icon: <Shield fill={"#959895"} />,
                 icon2:shield,
                 name: "Authentication",
                 path: "/signin",
             },
             {
                 id: 4,
-                icon: <User fill={"black"} />,
+                icon: <User fill={"#959895"}  />,
                 icon2:user,
                 name: "Users",
                 path: "/user",
                 // Add dropdown subLinks for "Users"
                 subLinks: [
-                    { name: "User Profile", path: "/dashboard", },
+                    { name: "User Profile", path: "/user", },
                     { name: "Edit User", path: "/dashboard",  },
                     { name: "User List", path: "/dashboard", },
                 ],
             },
             {
                 id: 5,
-                icon: <Utilities />,
+                icon: <Utilities fill={"#959895"}  />,
                 icon2:utilities,
                 name: "Utilities",
                 path: "/signup",
@@ -75,14 +75,14 @@ export const sideBarLinks = [
         links: [
             {
                 id: 6,
-                icon: <Component />,
+                icon: <Component fill={"#959895"}  />,
                 icon2:components,
                 name: "components",
                 path: "/maintenance",
             },
             {
                 id: 7,
-                icon: <Widgets />,
+                icon: <Widgets fill={"#959895"}  />,
                 icon2:widgets,
                 name: "widgets",
                 path: "/400",
