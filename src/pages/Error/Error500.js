@@ -2,19 +2,14 @@ import React from 'react'
 import Cookie from '../../assets/Error/cookie.png'
 import OrngButton from "../../components/common/OrngButton";
 import {Link} from "react-router";
-
 import v2 from "../../assets/common/Vector 4.png"
 import v1 from "../../assets/common/Vector 3.png"
-import useToggleSidebar from "../../hooks/useToggleSidebar";
 
 const Error500 = () => {
-
-    const {isSidebarHovered} = useToggleSidebar;
-
     return (
         <div className=" flex flex-col items-center justify-center bg-[#FFF6D8] h-[100vh] ">
 
-            <div className={` absolute  flex flex-col ${isSidebarHovered ? "w-[1380px]" : "w-full"}`}>
+            <div className={` absolute  flex flex-col `}>
                 <div className={`mb-[-125px]`}>
                     <img src={v1} alt=""/>
                 </div>
@@ -23,7 +18,7 @@ const Error500 = () => {
                 </div>
             </div>
             <div className="flex items-center justify-center gap-3 ">
-                <p className={`text-[350px] text-orange-500 font-extrabold `}>
+                <p className={`text-[22.875rem] text-bgcolor font-extrabold `}>
                     5
                 </p>
                 <div className="flex z-50">
@@ -52,7 +47,7 @@ const Error500 = () => {
 
             <div className={`flex flex-col items-center justify-center gap-3 ">`}>
 
-                <h2 className="text-3xl font-bold text-gray-800 ">
+                <h2 className="text-3xl font-bold font-PlayfairDisplay text-gray-800 ">
                     Internal Server Error
                 </h2>
                 <p className="text-gray-600  text-center max-w-md">
@@ -60,7 +55,7 @@ const Error500 = () => {
                     unavailable.
                 </p>
 
-                <Link to={"/"}>
+                <Link to={"/dashboard"}>
                     <OrngButton text={"Back to home"}/>
                 </Link>
             </div>

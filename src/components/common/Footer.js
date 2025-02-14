@@ -2,27 +2,28 @@ import React from 'react';
 
 const Footer = ({isSidebarHovered}) => {
     return (
-        <div className={` z-[200] flex items-center  justify-center  h-[55px]
-          bg-white overflow-x-hidden px-10 
-         transition duration-500 ${isSidebarHovered ? "w-[1,800px]  " : "w-[1,800px] "}   `}>
+        <div>
 
-            <div className="w-10/12 h-full flex ml-[-250px] justify-between items-center ">
-                <div className={`flex gap-[24px]`}>
-                    <p>
+            <div className={`flex items-center justify-between p-3 text-[0.813rem]`}>
+                <div className={`flex items-center gap-[1.5rem] `}>
+
+                    <div>
                         Privacy Policy
-                    </p>
-
-                    <p>
+                    </div>
+                    <div>
                         Terms of Use
-                    </p>
+                    </div>
                 </div>
 
-                <div className={`${isSidebarHovered ? "mr-[-150px]  " : " mr-[-150px] "}  `}>
-                    © 2021 Aprycot, Made with <span className={`text-red-700`}>❤</span> by IQONIC Design.
 
+                <div>
+                    © 2021 Aprycot, Made with ❤ by <span className={`text-bgcolor`}> IQONIC Design.</span>
                 </div>
+
 
             </div>
+
+
         </div>
 
     );

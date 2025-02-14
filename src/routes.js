@@ -5,6 +5,12 @@ import DashBoard from "./pages/DashBoard";
 import UserProfile from "./pages/UserProfile";
 import Error500 from "./pages/Error/Error500";
 import Error404 from "./pages/Error/Error404";
+import SignIn from "./pages/Auth/SignIn";
+import Maintenance from "./pages/Maintenance";
+import SignUp from "./pages/Auth/SignUP";
+import ResetPassword from "./pages/Auth/ResetPassword";
+
+import Success from "./pages/Auth/Success";
 
 const RoutesProvider = () => {
     return (
@@ -15,8 +21,12 @@ const RoutesProvider = () => {
             </Route>
 
 
-            <Route path='/signin'></Route>
-            <Route path='/signup'></Route>
+            <Route path='/signin' element={<SignIn/>}></Route>
+            <Route path='/maintenance' element={<Maintenance/>}></Route>
+            <Route path='/signup' element={<SignUp/>}></Route>
+            <Route path='/resetpassword' element={<ResetPassword/>}></Route>
+            <Route path='/success' element={<Success/>}></Route>
+
             <Route path="*" element={<Error500/>}/>
             <Route path="/400" element={<Error404/>}/>
         </Routes>

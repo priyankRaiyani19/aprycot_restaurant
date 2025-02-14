@@ -5,34 +5,34 @@ import {suggestionData} from '../../../data/userProfile/suggestionData'
 const Suggetions = () => {
     return (
 
-        <div className={`  bg-white p-5 rounded-[24px] py-[10px] `}>
+        <div className={`  bg-white p-[1rem] rounded-[24px] py-[10px] `}>
 
-            <h1 className={`font-bold text-[23px]`}>
+            <h1 className={`font-semibold font-PlayfairDisplay text-[1.5rem] p-[1rem]`}>
                Suggetions
             </h1>
 
-            <div className={`flex flex-col gap-2 mt-[10px] `}>
+            <div className={`flex flex-col `}>
                 {
                     suggestionData.map((ele) => (
 
                         <div
                             key={ele.id}
-                            className={ `  h-[130px]   `} >
+                            className={ ` p-[0.5rem]  `} >
 
                             <hr className={`mb-5 `}/>
 
-                            <div className={`flex items-center gap-[24px]  `} >
-                                <div className={`mt-[16px] h-[62px] w-[102px]`}>
+                            <div className={`flex items-center gap-[1.5rem]  `} >
+                                <div className={`mt-[1rem] `}>
                                     <img src={ele.img} alt=""
-                                         className={`h-[62px] w-[102px] `}
+                                         className={`h-[7rem] w-[7rem] `}
                                     />
                                 </div>
 
-                                <div className={`flex flex-col w-[368px] `} >
-                                    <p className={` text-[16px]`}>
+                                <div className={`flex flex-col gap-[0.5rem] `} >
+                                    <p className={` text-[1rem]`}>
                                         {ele.name}
                                     </p>
-                                    <p className={`text-[16px] text-gray-500`}>
+                                    <p className={`text-[16px] text-grayfont`}>
                                         {ele.count}+ Options
                                     </p>
                                 </div>

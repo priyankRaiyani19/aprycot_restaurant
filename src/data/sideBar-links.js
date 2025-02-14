@@ -1,6 +1,4 @@
 import React from "react";
-import component from "../assets/sidebar/component";
-import spacialpage from "../assets/sidebar/spacialpage";
 import Shield from "../assets/sidebar/shild";
 import User from "../assets/sidebar/user";
 import Utilities from "../assets/sidebar/utilities";
@@ -9,67 +7,86 @@ import Widgets from "../assets/sidebar/widgets";
 import Dashboard from "../assets/sidebar/dashboard";
 import Spacialpage from "../assets/sidebar/spacialpage";
 
+import dashboard from "../assets/sidebar/Category.png"
+import spacialpage from "../assets/sidebar/Game.png"
+import user from "../assets/sidebar/3 User.png"
+import shield from "../assets/sidebar/Shield Done.png"
+import utilities from "../assets/sidebar/Bookmark.png"
+import components from "../assets/sidebar/Wallet.png";
+import widgets from "../assets/sidebar/Ticket Star.png";
+
+
+
 
 export const sideBarLinks = [
-
     {
         title: "Home",
         links: [
             {
                 id: 1,
                 icon: <Dashboard />,
+                icon2:dashboard,
                 name: "Dashboard",
                 path: "/dashboard",
             },
-        ]
+        ],
     },
     {
         title: "Page",
         links: [
             {
                 id: 2,
-                icon: <Spacialpage/>,
+                icon: <Spacialpage />,
+                icon2:spacialpage,
                 name: "SpacialPage",
-                path: "/",
+                path: "/success",
             },
             {
                 id: 3,
-                icon: <Shield/>,
+                icon: <Shield />,
+                icon2:shield,
                 name: "Authentication",
-                path: "/",
+                path: "/signin",
             },
             {
                 id: 4,
                 icon: <User fill={"black"} />,
+                icon2:user,
                 name: "Users",
                 path: "/user",
+                // Add dropdown subLinks for "Users"
+                subLinks: [
+                    { name: "User Profile", path: "/dashboard", },
+                    { name: "Edit User", path: "/dashboard",  },
+                    { name: "User List", path: "/dashboard", },
+                ],
             },
-
             {
                 id: 5,
-                icon: <Utilities/>,
+                icon: <Utilities />,
+                icon2:utilities,
                 name: "Utilities",
-                path: "/",
-            }
-        ]
+                path: "/signup",
+            },
+        ],
     },
     {
         title: "Element",
         links: [
             {
                 id: 6,
-                icon: <Component/>,
+                icon: <Component />,
+                icon2:components,
                 name: "components",
-                path: "/",
+                path: "/maintenance",
             },
             {
                 id: 7,
-                icon: <Widgets/>,
+                icon: <Widgets />,
+                icon2:widgets,
                 name: "widgets",
-                path: "/",
-            }
-        ]
-    }
-
-
-]
+                path: "/400",
+            },
+        ],
+    },
+];

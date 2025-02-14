@@ -1,8 +1,9 @@
-import React, {useState} from 'react';
+import  {useState} from 'react';
 
-const UseToggleSidebar = () => {
+const SidebarToggle = () => {
+
     const [isSidebarHovered, setIsSidebarHovered] = useState(false);
     return { isSidebarHovered ,setIsSidebarHovered };
 };
 
-export default UseToggleSidebar;
+export default SidebarToggle;

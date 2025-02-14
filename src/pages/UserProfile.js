@@ -9,17 +9,17 @@ import {TypeOfOrder} from "../data/userProfile/typesOfOrder";
 import Suggetions from "../components/core/UserProfile/suggetions";
 import SpacialMenu from "../components/core/UserProfile/spacialMenu";
 import Review from "../components/core/UserProfile/review";
-import useToggleSidebar from "../hooks/useToggleSidebar";
+
 
 const UserProfile = () => {
-    const {isSidebarHovered} = useToggleSidebar;
+
 
     return (
         <div className={` z-50  flex flex-col  
-        text-3xl  text-black mx-auto my-auto bg-[#FFF6D8]  transition-all duration-500
-         ${isSidebarHovered ? "w-[90vw] ml-[-50px]   " : "w-[100vw]"} `}>
+            bg-mainbg w-full  
+       `}>
             <div
-                className={`fixed  flex flex-col mt-[250px] ${isSidebarHovered ? "w-[1380px] ml-[50px]" : "w-full "}`}>
+                className={`fixed  flex flex-col mt-[250px] w-full `}>
                 <div className={`mb-[-120px]`}>
                     <img src={v1} alt=""/>
                 </div>
@@ -28,13 +28,12 @@ const UserProfile = () => {
                 </div>
             </div>
 
-            <div>
-                <ProfileBanner isSidebarHovered={isSidebarHovered}/>
-            </div>
+
+            <ProfileBanner/>
 
 
-            <div className={`  z-50 p-5   
-            ${isSidebarHovered ? "w-[83.5vw] ml-[50px]" : "w-[91vw]"}
+            <div className={`  z-50  
+                p-8
             grid grid-cols-12 gap-[16px]
             
             `}>
@@ -42,7 +41,7 @@ const UserProfile = () => {
                 {/*grid 1 */}
 
                 <div className={`col-span-3  flex flex-col gap-[40px]`}>
-                    <News isSidebarHovered={isSidebarHovered}/>
+                    <News />
                     <OnlineOrder data={onlineOrderData} isActive={true}/>
                     <OnlineOrder data={TypeOfOrder} isActive={false}/>
 
@@ -51,8 +50,8 @@ const UserProfile = () => {
                 {/*grid 2 */}
 
                 <div className={`col-span-6  h-full  flex flex-col gap-[40px]  `}>
-                   <Review isActive={true}  />
-                   <Review isActive={false}  />
+                    <Review isActive={true}/>
+                    <Review isActive={false}/>
                 </div>
 
                 {/*grid 3 */}
@@ -61,21 +60,21 @@ const UserProfile = () => {
 
                     <div className={`  bg-white p-5 rounded-[24px] py-[10px] `}>
 
-                        <h1 className={`font-bold text-[23px]`}>
+                        <h1 className={`font-semibold text-[1.5rem] font-PlayfairDisplay`}>
                             About
                         </h1>
 
                         <hr className={`mb-5 mt-5`}/>
 
-                        <p className={`text-[16px] text-gray-500`}>
+                        <p className={`text-[1rem] text-grayfont `}>
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, saepe?
-                            <span className={`font-bold text-black`}>
+                            <span className={`font-semibold text-black`}>
                                {" "}
                                 Lorem ipsum dolor sit amet.
                             </span>
                         </p>
 
-                        <div className={`text-gray-500`}>
+                        <div className={`text-grayfont flex  flex-col gap-[0.5rem] mt-[1rem] `}>
                             <div className={`flex items-center text-[16px] gap-2 `}>
                                 <p>Email : </p>
                                 <p className={`text-[#EA6A12]`}>
@@ -102,15 +101,10 @@ const UserProfile = () => {
                     </div>
 
 
-                    <div>
                     <Suggetions/>
-                    </div>
 
-                    <div>
 
-                        <SpacialMenu/>
-                    </div>
-
+                    <SpacialMenu/>
 
 
                 </div>

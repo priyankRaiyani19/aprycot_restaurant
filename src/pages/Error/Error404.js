@@ -28,7 +28,7 @@ const Error404 = ({isSidebarHovered}) => {
             </div>
 
           <div className={`flex flex-col items-center justify-center gap-6`}>
-              <h2 className="text-3xl font-bold text-gray-800 ">
+              <h2 className="text-3xl font-bold font-PlayfairDisplay text-gray-800 ">
                   Oops! Page Not Found
               </h2>
               <p className="text-gray-600 text-center max-w-md ">
@@ -36,7 +36,7 @@ const Error404 = ({isSidebarHovered}) => {
                   unavailable.
               </p>
 
-              <Link to={"/"}>
+              <Link to={"/dashboard"}>
                   <OrngButton text={"Back to home"}/>
               </Link>
           </div>
