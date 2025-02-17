@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { sideBarLinks } from "../../../data/sideBar-links";
 import { IoIosArrowForward, IoIosArrowDown } from "react-icons/io";
-import {Link, NavLink} from "react-router";
+import { NavLink} from "react-router";
 import {FaCircle} from "react-icons/fa";
 import SidebarToggle from "../../../hooks/sidebarToggle";
 
