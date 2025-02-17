@@ -15,6 +15,9 @@ const Layout = () => {
                 className={`transition-all duration-500  flex flex-col w-full`}
             >
                 <NavBar />
+
+
+
                 <Outlet/>
                 <Footer />
             </div>

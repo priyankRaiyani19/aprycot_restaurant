@@ -15,8 +15,8 @@ import Success from "./pages/Auth/Success";
 const RoutesProvider = () => {
     return (
         <Routes>
-            <Route path='/' element={<Layout/>}>
-                <Route path="dashboard" element={<DashBoard/>}/>
+            <Route path='/dashboard' element={<Layout/>}>
+                <Route path="/dashboard" element={<DashBoard/>}/>
                 <Route path="user" element={<UserProfile/>}/>
             </Route>
 
