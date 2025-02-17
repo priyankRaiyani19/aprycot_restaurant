@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { sideBarLinks } from "../../../data/sideBar-links";
 import { IoIosArrowForward, IoIosArrowDown } from "react-icons/io";
 import { NavLink} from "react-router";
@@ -18,11 +18,11 @@ const SideBarLinks = () => {
     }
 
     // Automatically close the dropdown when the sidebar is closed
-   useEffect(() => {
-       if(!isSidebarHovered){
-           setActiveDropdown(null);
-       }
-   });
+   // useEffect(() => {
+   //     if(!isSidebarHovered){
+   //         setActiveDropdown(null);
+   //     }
+   // });
 
     return (
         <div className={`flex items-center justify-center text-black mt-5 px-5`}>

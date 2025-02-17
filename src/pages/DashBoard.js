@@ -4,7 +4,7 @@ import v2 from "../assets/common/Vector 4.png"
 import OfferSection from "../components/core/Dashboard/offerSection";
 import MainCategory from "../components/core/Dashboard/mainCategory";
 import TrendingOrder from "../components/core/Dashboard/trendingOrder";
-import HalfBurger from "../assets/dashBoard/Burger_BG.png"
+// import HalfBurger from "../assets/dashBoard/Burger_BG.png"
 
 
 function DashBoard() {
