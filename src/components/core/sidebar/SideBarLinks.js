@@ -22,7 +22,7 @@ const SideBarLinks = () => {
        if(!isSidebarHovered){
            setActiveDropdown(null);
        }
-   },[]);
+   });
 
     return (
         <div className={`flex items-center justify-center text-black mt-5 px-5`}>
