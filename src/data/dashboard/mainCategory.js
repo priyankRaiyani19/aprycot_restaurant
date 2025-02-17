@@ -12,12 +12,12 @@ export const mainCategory = [
     },
     {
         id: '2',
-        name:"VegetablePizza",
+        name:"Vegetable Pizza",
         img:VegetablePizza
     },
     {
         id: '3',
-        name:"MushroomPizza",
+        name:"Mushroom Pizza",
         img:MushroomPizza
     },
     {

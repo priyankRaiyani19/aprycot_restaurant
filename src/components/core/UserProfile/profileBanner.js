@@ -61,8 +61,8 @@ const ProfileBanner = () => {
                     <div className={`flex items-center gap-3 p-1  `}>
 
                         {bannerData.map((ele, index) => (
-                            <div key={index} className={` flex flex-col items-center justify-center p-[0.5rem] rounded-[8px] bg-bgcolor
-                                 h-[65px] w-[65px] text-white`}>
+                            <div key={index} className={` flex flex-col items-center justify-center p-[0.5rem] 
+                            rounded-[0.5rem] gap-[0.4rem] bg-bgcolor h-[4rem] w-[4rem] text-white`}>
                                 <p className={`text-[1rem] font-bold`}>
                                     {ele.count}
                                 </p>

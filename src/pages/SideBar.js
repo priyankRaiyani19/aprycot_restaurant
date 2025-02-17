@@ -13,9 +13,9 @@ const SideBar = () => {
         <div
             className="sticky top-0 text-black bg-white
                 hover:w-[257px] w-[120px]
-             transition-all duration-200 group  "
+             transition-all duration-200 group "
             onMouseEnter={() => setIsSidebarHovered(true)}
-            onMouseLeave={() => setIsSidebarHovered(false)}
+            onMouseLeave={() => setIsSidebarHovered(null)}
         >
             <div className="flex flex-col justify-center items-center  p-3   border-b border-bordercolor ">
                 <img

@@ -26,7 +26,7 @@ const OfferSection = () => {
                 <div className={`text-[2.5rem] font-PlayfairDisplay font-bold`}>
                     Hello, Austine Robertson
                 </div>
-                <div className={`text-graybg`}>
+                <div className={`text-grayfont font-semibold`}>
                     Get <span className={`text-bgcolor`}> FREE delivery </span> on every weekend.
                 </div>
 
@@ -49,7 +49,7 @@ const OfferSection = () => {
                 <h1 className={`text-[2.5rem] font-semibold font-PlayfairDisplay`}>
                     50% off
                 </h1>
-                <div className={`text-graybg`}>
+                <div className={`text-grayfont font-semibold`}>
                     The full price of burgers
                 </div>
 

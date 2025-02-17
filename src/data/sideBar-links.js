@@ -15,6 +15,7 @@ import utilities from "../assets/sidebar/Bookmark.png"
 import components from "../assets/sidebar/Wallet.png";
 import widgets from "../assets/sidebar/Ticket Star.png";
 
+// import shield1 from "../assets/"
 
 
 
@@ -24,7 +25,7 @@ export const sideBarLinks = [
         links: [
             {
                 id: 1,
-                icon: <Dashboard fill={"#959895"}   />,
+                icon: <Dashboard    />,
                 icon2:dashboard,
                 name: "Dashboard",
                 path: "/dashboard",
@@ -36,21 +37,21 @@ export const sideBarLinks = [
         links: [
             {
                 id: 2,
-                icon: <Spacialpage fill={"#959895"} />,
+                icon: <Spacialpage />,
                 icon2:spacialpage,
                 name: "SpacialPage",
                 path: "/success",
             },
             {
                 id: 3,
-                icon: <Shield fill={"#959895"} />,
+                icon: <Shield  />,
                 icon2:shield,
                 name: "Authentication",
                 path: "/signin",
             },
             {
                 id: 4,
-                icon: <User fill={"#959895"}  />,
+                icon: <User  />,
                 icon2:user,
                 name: "Users",
                 path: "/user",
@@ -63,7 +64,7 @@ export const sideBarLinks = [
             },
             {
                 id: 5,
-                icon: <Utilities fill={"#959895"}  />,
+                icon: <Utilities  />,
                 icon2:utilities,
                 name: "Utilities",
                 path: "/signup",
@@ -75,14 +76,14 @@ export const sideBarLinks = [
         links: [
             {
                 id: 6,
-                icon: <Component fill={"#959895"}  />,
+                icon: <Component  />,
                 icon2:components,
                 name: "components",
                 path: "/maintenance",
             },
             {
                 id: 7,
-                icon: <Widgets fill={"#959895"}  />,
+                icon: <Widgets  />,
                 icon2:widgets,
                 name: "widgets",
                 path: "/400",

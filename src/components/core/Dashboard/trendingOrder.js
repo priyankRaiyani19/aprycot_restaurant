@@ -29,7 +29,7 @@ const TrendingOrder = () => {
 
                 <div className={` flex `}>
 
-                    <div className={`grid grid-cols-3 items-center gap-[3.5rem] relative`}>
+                    <div className={`grid grid-cols-3 items-center gap-[5rem] relative`}>
 
                         {trendingOrderLinks.map((ele) => (
 
@@ -46,13 +46,14 @@ const TrendingOrder = () => {
                                         Italian Salad
                                     </p>
 
-                                    <p className={`text-[0.813rem] group-hover:text-white text-graybg`}>
+                                    <p className={`text-[0.813rem] group-hover:text-white text-grayfont`}>
                                         {ele.cal} calories
                                     </p>
 
-                                    <hr className={`w-[2rem] `}/>
 
-                                    <p className={`text-[13px] text-graybg group-hover:text-white`}>
+                                    <div className={`h-[1px] bg-grayfont w-[2rem] group-hover:bg-white `}></div>
+
+                                    <p className={`text-[13px] text-grayfont group-hover:text-white`}>
                                         {ele.number} persons
                                     </p>
                                     <div className={`flex items-center gap-[28px] `}>
@@ -67,7 +68,7 @@ const TrendingOrder = () => {
                                 `}
                                      key={ele.id}>
                                     <img src={ele.img} alt="" className={` z-[500] 
-                                    ${ele.id >3 ?"ml-[4rem]" :"ml-[6rem] "}
+                                    ${ele.id >3 ?"ml-[6.5rem]" :"ml-[8.5rem] "}
                           
                                     `}/>
                                 </div>
@@ -79,7 +80,7 @@ const TrendingOrder = () => {
             </div>
 
 
-            <div className={`p-5 w-[30%] bg-opacity-100 backdrop-blur-[5px] 
+            <div className={`p-5 z-[12] bg-opacity-50 w-[30%] backdrop-blur-[5px] 
             bg-white shadow-lg rounded-[1.5rem]  max-w-md 
      `}>
                 <div className={`flex flex-col gap-[1.5rem]`}>
@@ -97,11 +98,11 @@ const TrendingOrder = () => {
                         </div>
                     </div>
                     <div className={`h-[1px] bg-bordercolor `}></div>
-                    <div className="flex z-50 flex-wrap gap-x-[1rem] gap-y-[1.5rem] ">
+                    <div className="flex z-50 flex-wrap gap-x-[1rem] gap-y-[1rem] ">
                         {smallCategories.map((ele, index) => (<button
                             key={index}
                             onClick={() => setSelectedCategory(ele)}
-                            className={`px-4 py-2 rounded-full text-sm 
+                            className={`px-[1.4rem] py-[0.5rem] rounded-full text-sm 
                          ${selectedCategory === ele ? "bg-bgcolor text-white"
                                 : "border border-bgcolor text-bgcolor hover:bg-bgcolor hover:text-white"}`}
                         >
