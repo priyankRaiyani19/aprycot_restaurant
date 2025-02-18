@@ -11,7 +11,8 @@ const TypesOfCategoryMenu = () => {
                      items-center hover:bg-bgcolor2 bg-white cursor-pointer                      
                       gap-[1.5rem] p-5`} key={index}>
 
-                    <div className={` items-center text-center group-hover:border-white border-[#ffffff00] border-4 rounded-full `}>
+                    <div
+                        className={` items-center text-center group-hover:border-white border-[#ffffff00] border-4 rounded-full `}>
                         <img src={ele.img} alt="not found"/>
                     </div>
 
@@ -20,8 +21,8 @@ const TypesOfCategoryMenu = () => {
                     </div>
 
 
-                        <div className={` h-[0.063rem] w-[2rem]  group-hover:w-[3.188rem] group-hover:bg-white bg-bgcolor `}  ></div>
-
+                    <div
+                        className={` h-[0.063rem] w-[2rem]  group-hover:w-[3.188rem] group-hover:bg-white bg-bgcolor `}></div>
 
 
                     <p className={` h-[1.5rem] w-[1.5rem] p-[0.375rem] text-[0.75rem]  content-center 
