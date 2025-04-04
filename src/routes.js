@@ -1,5 +1,5 @@
 import React from 'react';
-import {Route, Routes} from "react-router";
+import {Route, Routes,Navigate} from "react-router";
 import Layout from "./pages/Layout";
 import DashBoard from "./pages/DashBoard";
 import UserProfile from "./pages/UserProfile";
@@ -15,6 +15,7 @@ import Success from "./pages/Auth/Success";
 const RoutesProvider = () => {
     return (
         <Routes>
+        <Route path="/" element={<Navigate to="/dashboard" replace />} />
             <Route path='/' element={<Layout/>}>
                 <Route path="/dashboard" element={<DashBoard/>}/>
                 <Route path="user" element={<UserProfile/>}/>
